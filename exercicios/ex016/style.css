@@ -1,0 +1,38 @@
+@charset "UTF-8"; /* não ter problema com caracteres especiais dentro do css*/
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*height:100%; /*deixara a autura 100%*/
+}
+
+/* cor de fundo com degradê*/
+body{
+    background-image:linear-gradient(to right, #FEEADC, #FEE3A2) ;
+}
+
+/* Principal*/
+main{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px; /*ponta arredondadas */
+    box-shadow: 5px 5px 15px #032029a5; /*sombra*/
+    width: 600px; /*largura*/
+    padding: 10px ; /*acolchoamento / espaco no canto*/
+    margin: auto; /*centralizar*/
+}
+
+h1{
+    color:#4B74F5 ;
+    text-align: center;
+    text-shadow: 1px 1px 2px #021a21d6;
+
+}
+
+h2{
+    color: #0C345C;
+}
+
+p{
+    text-align: justify;
+}
+

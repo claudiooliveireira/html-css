@@ -1,0 +1,36 @@
+body{
+    background-color: black; /* deixara o fundo black*/
+}
+
+/* deixara o h1 com o text centralizada com cor white*/
+h1{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* deixara o h2 com o text centralizada com cor white*/
+h2{
+    color: white;
+    text-align: center;
+}
+
+/* deixara p com o text centralizada com cor white*/
+p{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* deixara img centralizada no centro do site*/
+img{
+    display: block;
+    margin: auto;
+
+}
+
+/* deixara iframe centralizada no centro do site*/
+iframe{
+    margin: auto;
+    display: block;
+}
