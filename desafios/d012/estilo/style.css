@@ -1,1 +1,86 @@
 @charset "UTF-8";
+
+*{/* Cong. gerais*/
+    margin: 0px; /* Todos elementos*/
+    padding: 0px;/* Todos elementos */
+}
+
+html, body {
+    min-height: 100vh; /*Tamanho mínimo do html e do corpo do site*/
+    background-color: darkgray;
+}
+
+/* Cabeçalho */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 50px; /* 50 pixel up*/
+    font-variant: small-caps;
+}
+
+header p {
+     padding-bottom: 50px; /* 50 pixel down*/
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none; 
+    font-weight: bolder;
+}
+
+header a:hover , footer a:hover{
+    text-decoration: underline;
+    color: rgb(241, 200, 149);
+}
+
+/* section geral (normal e imagem)*/
+section {
+    padding-top: 10vh; /*10% da altura up da tela*/
+    padding-bottom: 10vh;/* 10% da altura down da tela */
+    line-height: 2em; /* Espaço dublo entre as linhas*/
+    padding-left: 30px;
+}
+
+/* seção normal */
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+/* seção imagem */
+section.imagem {
+    background-color: rgb(91, 75, 75);
+    color: white;
+}
+
+/* fundo dentro da seção imagem*/
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Rodapé do site*/
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
