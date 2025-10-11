@@ -1,13 +1,26 @@
 @charset "UTF-8";
 
+/* fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+/* cong. var das fontes*/
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif; /* Fonte padrão do site*/
+    --fonte2: "Passion One", sans-serif; /* Fonte titúlo*/
+    --fonte3: "Sriracha", cursive; /* Fonte escrita*/
+}
+
 *{/* Cong. gerais*/
     margin: 0px; /* Todos elementos*/
     padding: 0px;/* Todos elementos */
+    font-size: 1em; /* Tamanho padrão*/
 }
 
 html, body {
     min-height: 100vh; /*Tamanho mínimo do html e do corpo do site*/
-    background-color: darkgray;
+    background-color: darkgray; /* Fundo darkgray*/
+    font-family: var(--fonte1) /* Fonte padrão do site*/
+    
 }
 
 /* Cabeçalho */
@@ -17,9 +30,11 @@ header {
     text-align: center;
 }
 
-header h1 {
+header  h1 {
     padding-top: 50px; /* 50 pixel up*/
     font-variant: small-caps;
+    font-family: var(--fonte2); /* Fonte de titúlo*/
+    font-size: 10vw; /* tamanho do h1, 10vw se adapta ao tamanho da tela(ps:não é a melhor maneira*/
 }
 
 header p {
@@ -43,6 +58,8 @@ section {
     padding-bottom: 10vh;/* 10% da altura down da tela */
     line-height: 2em; /* Espaço dublo entre as linhas*/
     padding-left: 30px;
+    font-family: var(--fonte3); /* Fonte escrita*/
+    font-size: 3.5vw;  /* tamanho da seção, 4.5vw se adapta ao tamanho da tela(ps:não é a melhor maneira*/
 }
 
 /* seção normal */
@@ -57,9 +74,10 @@ section.imagem {
     color: white;
 }
 
-/* fundo dentro da seção imagem*/
+/* fundo do parágrafo dentro da seção imagem*/
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.253);
 }
 
