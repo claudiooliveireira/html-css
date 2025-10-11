@@ -62,6 +62,11 @@ section {
     font-size: 3.5vw;  /* tamanho da seção, 4.5vw se adapta ao tamanho da tela(ps:não é a melhor maneira*/
 }
 
+/* Espaçamento entre os parágrafo*/
+section p {
+    padding-bottom: 2em; /* espaço entre cada seção*/
+}
+
 /* seção normal */
 section.normal {
     background-color: white;
@@ -72,26 +77,32 @@ section.normal {
 section.imagem {
     background-color: rgb(91, 75, 75);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.447); /* sombra de dentro da imagem (imset/para dentro, 6px , 6px, 13px de espalhamento, 0px ampliação, black )*/
+    background-size: cover; /*cobrir o espaço  */
+    background-attachment: fixed; /* fixa a imagem, efeito parallax simples */
+
 }
 
 /* fundo do parágrafo dentro da seção imagem*/
 section.imagem > p {
     display: inline-block;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.521);
+    box-shadow: 1px 1px 0px black;
+
 }
 
+/*imagem de fundo nas secões imagem*/
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center; /*direita ao centro*/
+    
+}
 
-
-
-
-
-
-
-
-
-
-
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    
+}
 
 
 
