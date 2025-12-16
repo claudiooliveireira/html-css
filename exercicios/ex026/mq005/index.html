@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> <!-- Material Symbols-->
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="">Opção 1</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="">Opção 3</a></li>
+                <li><a href="">Opção 4</a></li>
+                <li><a href="">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nihil tenetur velit soluta vero tempore non animi possimus repellendus, modi facilis in officiis sit sint libero! Amet maxime quos optio.
+            Illum commodi officiis quisquam, quae corporis dolore quia labore et dignissimos fugiat iusto vitae quam ex? Harum a consectetur voluptas eaque libero saepe fugit quis! Qui soluta saepe iusto eos.
+            Fugiat aspernatur blanditiis corporis expedita. Modi dolor commodi quod culpa numquam debitis quaerat magni iure ullam quidem, distinctio earum dolorem vitae, a ipsa iusto consectetur rem. Omnis, sunt? Magni, enim?
+            Voluptatibus culpa omnis, officiis facilis eum minus maxime doloribus natus fuga magnam autem quo debitis inventore, sequi quisquam? Rem ex quae dolorem voluptate quisquam dolores enim vel mollitia cupiditate veniam.
+            Vitae itaque ratione optio neque tempora corporis culpa doloribus officia, expedita laborum molestias quidem vel. Quaerat quasi temporibus magnam et soluta sunt. Fuga dolor fugit magni facere? Nam, distinctio cupiditate.
+            Vitae libero porro eveniet nobis praesentium ex laboriosam, non aliquid maiores eos voluptates dolore eaque soluta dolor dignissimos cum minima corrupti excepturi accusamus voluptatibus hic. Enim libero eaque velit dicta!</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores molestias, velit fugit, id deleniti ducimus praesentium voluptatibus doloremque similique hic vero animi maiores delectus perspiciatis maxime incidunt? Recusandae, ad fuga.
+            Dolore assumenda doloribus quasi odit similique nisi veritatis cumque dicta iusto perferendis consequatur, est tenetur aut veniam, incidunt, rerum delectus nemo modi ea inventore reiciendis nulla labore? Cumque, impedit reiciendis?
+            Illum iure est doloremque adipisci veritatis et excepturi voluptas tempore cumque, ad accusamus sequi laboriosam ipsam. Illum cum eius doloribus, magnam labore aspernatur sunt, quidem neque eos voluptas dolorum ipsa?
+            Dolorum quae facere impedit animi voluptas. Magni odio odit ipsum tempora. Tempora nulla esse, voluptates aut veritatis repellat, fuga ducimus cum quis animi iusto error doloremque incidunt autem rerum porro.
+            Omnis mollitia alias esse ad aspernatur numquam neque quisquam totam voluptatum excepturi repellendus, at atque porro sapiente nesciunt fuga culpa. Mollitia, voluptates tempora est veniam id sunt non rem optio.</p>
+
+    </main>
+
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block') { // verifica se o menu está aberto
+                itens.style.display = 'none'; // se estiver aberto, fecha o menu
+
+            }else {
+                itens.style.display = 'block'; // se estiver fechado abre o menu
+            }
+        }
+    </script>
+    
+</body>
+</html>
