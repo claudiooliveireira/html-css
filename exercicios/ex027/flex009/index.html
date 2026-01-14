@@ -7,10 +7,9 @@
     <style>
         div.container { /* elemento pai father */
             background-color: aqua;
-            display: flex;
-            flex-flow: row wrap;
-            align-content: flex-start;
-            height: 400px;
+          
+            display : flex;
+            flex-flow: row rowrap;
         }
 
 
@@ -18,23 +17,21 @@
             background-color: orange;
             border: 1px solid black;
             text-align: center;
-            padding: 40px;
-           
+            /*flex-basis: auto;*/
+            flex-basis: 150px;
+            
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="item">A</div>
-        <div class="item">B</div>
+        <div class="item">Outro conteúdo</div>
         <div class="item">C</div>
-        <div class="item">D</div>
+        <div class="item">outro conteúdo um pouca maior</div>
         <div class="item">E</div>
-        <div class="item">F</div>
+        <div class="item">Another section a little big</div>
         <div class="item">G</div>
-        <div class="item">H</div>
-        <div class="item">I</div>
-        <div class="item">J</div>
     </div>
     
 </body>
